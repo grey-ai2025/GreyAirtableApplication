@@ -31,3 +31,30 @@ canvas {
   opacity: 1;
   transition: opacity 0.3s ease;
 }
+
+/* Ensure SVG scales nicely */
+#loader svg {
+  width: 64px;
+  height: 64px;
+  color: #0d6efd; /* Matches Bootstrap primary blue */
+}
+
+#loader .lead {
+  color: #555;
+  margin-top: 10px;
+}
+
+.spinning-cog4432 {
+  animation: spinning-cog4432 1.3s infinite ease;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spinning-cog4432 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
